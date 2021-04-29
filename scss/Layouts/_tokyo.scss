@@ -1,0 +1,262 @@
+.tokyo__title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    // padding: 100px;
+    background-color: $cl-black-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: all 1s;
+    .tokyo__title__img {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        h1 {
+            position: absolute;
+            bottom: 20%;
+            //left: 50%;
+            // transform: translateX(-50%);
+            @include text($fs-4 - 0.5, $cl-white-1);
+            font-family: "Roboto Slab", serif;
+            font-weight: 600;
+            transform: translateZ(100px);
+            // transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+        }
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 100%;
+            filter: blur(3px);
+        }
+    }
+}
+body.tokyo {
+    position: relative;
+    // background-color: black !important;
+}
+.tokyo__gallery {
+    background-color: $cl-white-2;
+    text-align: center;
+    padding: $pd-8 $pd-6;
+    .tokyo__gallery__content {
+        h1 {
+            @include text($fs-4 + 0.8, $cl-black-1);
+            font-family: "Roboto Slab", serif;
+            font-weight: 600;
+            letter-spacing: 2px;
+            // transition: all .3s;
+        }
+        p {
+            @include text($fs-0, $cl-gray-2);
+            font-weight: 500;
+        }
+    }
+    .tokyo__gallery__img {
+        margin-top: $mg-7;
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(55, 10vh);
+        >div{
+            position: relative;
+            overflow: hidden;
+            .tokyo__gallery__img__iconDown{
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -100%);
+                width: 40px;
+                height: 40px;
+                background-color: rgba(0, 0, 0, .7);
+                text-align: center;
+                line-height: 50px;
+                transition: all .1s;
+                i{
+                    @include text($fs-0 + .2, $cl-white-1);
+                    
+                }
+            }
+            &:hover{
+                .tokyo__gallery__img__iconDown{
+                    transform: translate(-50%, 0);
+                    i{
+                        animation-name: iconDown;
+                        animation-duration: .5s;
+                        animation-timing-function: linear;
+                    }
+                }
+                
+            }
+            @keyframes iconDown{
+                0%{
+                    transform: translateY(-100%);
+                }
+                50%{
+                    transform: translateY(0);
+                }
+                60%{
+                    transform: translateY(-40%);
+                }
+                70%{
+                    transform: translateY(0);
+                }
+                80%{
+                    transform: translateY(-25%);
+                }
+                90%{
+                    transform: translateY(0);
+                }
+                95%{
+                    transform: translateY(-10%);
+                }
+                100%{
+                    transform: translateY(0);
+                }
+            }
+        }
+        #tokyo__gallery-1 {
+            cursor: pointer;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+        #tokyo__gallery-2 {
+            cursor: pointer;
+            grid-column-start: 6;
+            grid-column-end: 17;
+            grid-row-start: 1;
+            grid-row-end: 9;
+        }
+        #tokyo__gallery-3 {
+            cursor: pointer;
+            grid-column-start: 3;
+            grid-column-end: 9;
+            grid-row-start: 10;
+            grid-row-end: 19;
+        }
+        #tokyo__gallery-4 {
+            cursor: pointer;
+            grid-column-start: 10;
+            grid-column-end: 21;
+            grid-row-start: 10;
+            grid-row-end: 17;
+        }
+        #tokyo__gallery-5 {
+            cursor: pointer;
+            grid-column-start: 5;
+            grid-column-end: 18;
+            grid-row-start: 20;
+            grid-row-end: 39;
+        }
+        #tokyo__gallery-6 {
+            cursor: pointer;
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 40;
+            grid-row-end: 47;
+        }
+        #tokyo__gallery-7 {
+            cursor: pointer;
+            grid-column-start: 10;
+            grid-column-end: 21;
+            grid-row-start: 48;
+            grid-row-end: 56;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10%;
+        }
+    }
+}
+.tokyo__gallery__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: $cl-white-1;
+    background-color: rgba(0, 0, 0, 0.7);
+    // display: none;
+    transform: translateY(-100%);
+
+    transition: all 0.2s;
+    .row {
+        margin: 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 95%;
+        height: 75%;
+        background-color: $cl-white-1;
+        // transform: translateY(-100%);
+        transition: all 0.7s;
+        > div {
+            padding: 0;
+            height: 100%;
+            .tokyo__gallery__modal__img {
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            .tokyo__gallery__modal__content {
+                padding: $pd-6 + 5 $pd-5;
+                opacity: 0;
+                transition: all 1.5s;
+                h1 {
+                    @include text($fs-3 + 0.2, $cl-black-1);
+                    font-family: "Roboto Slab", serif;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+                p {
+                    @include text($fs-1 + 0.2, $cl-gray-2);
+                    line-height: 30px;
+                }
+            }
+        }
+        .tokyo__gallery__modal__button {
+            position: absolute;
+            right: 2%;
+            top: 5%;
+            width: 40px;
+            height: 40px;
+            // padding: 10px;
+            background-color: $cl-black-2;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 45px;
+            transition: all 0.2s;
+            cursor: pointer;
+            i {
+                @include text($fs-1, $cl-white-1);
+                transition: all 0.2s;
+            }
+            &:hover {
+                i {
+                    @include text($fs-1, $cl-black-2);
+                }
+
+                background-color: transparent;
+                box-shadow: 0 0 10px 0px black;
+            }
+        }
+    }
+}

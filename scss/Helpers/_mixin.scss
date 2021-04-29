@@ -1,0 +1,4 @@
+@mixin text($fs, $cl) {
+    font-size: $fs;
+    color: $cl;
+}

@@ -1,0 +1,256 @@
+@media screen and (max-width: 768px) {
+    .main--page {
+        .row {
+            > div {
+                .main--page__overlay {
+                    .main--page__content {
+                        top: 30%;
+                        h3 {
+                            font-size: $fs-2 - 0.2;
+                        }
+                        p {
+                            font-size: $fs-0;
+                            font-weight: 500;
+                        }
+                        .main--page__iconAdd {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .london__title {
+        h1 {
+            font-size: $fs-3 - 0.5;
+        }
+    }
+    .london__content {
+        padding: $pd-5;
+    }
+    .london__gallery {
+        .london__gallery__content {
+            h1 {
+                font-size: $fs-3;
+            }
+        }
+        .london__gallery__img {
+            grid-template-rows: repeat(28, 20vh);
+            #london__gallery-1 {
+                grid-column-start: 2;
+                grid-column-end: 10;
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+            #london__gallery-2 {
+                grid-column-start: 2;
+                grid-column-end: 10;
+                grid-row-start: 5;
+                grid-row-end: 9;
+            }
+            #london__gallery-3 {
+                grid-column-start: 1;
+                grid-column-end: 11;
+                grid-row-start: 10;
+                grid-row-end: 14;
+            }
+            #london__gallery-4 {
+                grid-column-start: 2;
+                grid-column-end: 10;
+                grid-row-start: 15;
+                grid-row-end: 20;
+            }
+            #london__gallery-5 {
+                grid-column-start: 2;
+                grid-column-end: 10;
+                grid-row-start: 21;
+                grid-row-end: 24;
+            }
+            #london__gallery-6 {
+                grid-column-start: 2;
+                grid-column-end: 10;
+                grid-row-start: 25;
+                grid-row-end: 29;
+            }
+        }
+    }
+    .tokyo__title {
+        .tokyo__title__img {
+            h1 {
+                font-size: $fs-3 - 0.5;
+            }
+            video {
+                width: 100%;
+            }
+        }
+    }
+    .tokyo__gallery {
+        padding: $pd-8 - 20 $pd-3;
+        .tokyo__gallery__content {
+            h1 {
+                font-size: $fs-3;
+            }
+        }
+        .tokyo__gallery__img {
+            grid-template-rows: repeat(65, 10vh);
+            #tokyo__gallery-1 {
+                cursor: pointer;
+                grid-column-start: 1;
+                grid-column-end: 21;
+                grid-row-start: 1;
+                grid-row-end: 10;
+            }
+            #tokyo__gallery-2 {
+                cursor: pointer;
+                grid-column-start: 1;
+                grid-column-end: 21;
+                grid-row-start: 11;
+                grid-row-end: 17;
+            }
+            #tokyo__gallery-3 {
+                cursor: pointer;
+                grid-column-start: 1;
+                grid-column-end: 21;
+                grid-row-start: 18;
+                grid-row-end: 31;
+            }
+            #tokyo__gallery-4 {
+                cursor: pointer;
+                grid-column-start: 1;
+                grid-column-end: 21;
+                grid-row-start: 32;
+                grid-row-end: 38;
+            }
+            #tokyo__gallery-5 {
+                cursor: pointer;
+                grid-column-start: 1;
+                grid-column-end: 21;
+                grid-row-start: 39;
+                grid-row-end: 52;
+            }
+            #tokyo__gallery-6 {
+                cursor: pointer;
+                grid-column-start: 1;
+                grid-column-end: 21;
+                grid-row-start: 53;
+                grid-row-end: 59;
+            }
+            #tokyo__gallery-7 {
+                cursor: pointer;
+                grid-column-start: 1;
+                grid-column-end: 21;
+                grid-row-start: 60;
+                grid-row-end: 66;
+            }
+            img {
+                border-radius: 0;
+            }
+        }
+    }
+    .newyork__title {
+        h1 {
+            font-size: $fs-3 - 0.5;
+        }
+    }
+    .newyork__gallery--sticky {
+        .newyork__gallery--sticky__content {
+            width: 90%;
+            h3 {
+                font-size: $fs-2;
+                line-height: 40px;
+            }
+        }
+    }
+    .newyork__gallery {
+        .newyork__gallery__img {
+            grid-template-rows: repeat(321, 2vh);
+            #newyork__gallery-1 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 1;
+                grid-row-end: 4;
+                padding-top: 0;
+                // border-top: 1px solid rgba(0, 0, 0, 0.1);
+                border: none;
+            }
+            #newyork__gallery-2 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 5;
+                grid-row-end: 35;
+            }
+            #newyork__gallery-3 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 36;
+                grid-row-end: 86;
+            }
+            #newyork__gallery-4 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 87;
+                grid-row-end: 127;
+            }
+            #newyork__gallery-5 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 128;
+                grid-row-end: 178;
+            }
+            #newyork__gallery-6 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 179;
+                grid-row-end: 209;
+            }
+            #newyork__gallery-7 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 210;
+                grid-row-end: 240;
+            }
+            #newyork__gallery-8 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 241;
+                grid-row-end: 291;
+            }
+            #newyork__gallery-9 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 292;
+                grid-row-end: 322;
+            }
+        }
+    }
+    .sydney__title {
+        h1 {
+            font-size: $fs-3 - 0.5;
+        }
+    }
+    .sydney__atmos {
+        height: 80vh;
+        .sydney__atmos__content {
+            width: calc(100% - 60px);
+            top: 50px;
+            text-align: center;
+            h1 {
+                font-size: $fs-2;
+            }
+        }
+        .sydney__atmos__img {
+            width: calc(100% - 60px);
+        }
+    }
+    .sydney__box {
+        height: 70vh;
+        .box {
+            width: 120px;
+            height: 120px;
+            span {
+                transform: rotateX(calc(var(--i) * 45deg)) translateZ(170px);
+            }
+        }
+    }
+}

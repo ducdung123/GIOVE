@@ -1,0 +1,219 @@
+@media screen and (max-width: 1100px) {
+    .london__content {
+        padding: $pd-7 $pd-8;
+        p {
+            font-size: $fs-0 + 0.1;
+            line-height: 25px;
+        }
+    }
+    .london__gallery {
+        .london__gallery__img {
+            grid-template-rows: repeat(40, 20vh);
+            #london__gallery-1 {
+                grid-column-start: 2;
+                grid-column-end: 10;
+                grid-row-start: 1;
+                grid-row-end: 5;
+            }
+            #london__gallery-2 {
+                grid-column-start: 2;
+                grid-column-end: 10;
+                grid-row-start: 6;
+                grid-row-end: 13;
+            }
+            #london__gallery-3 {
+                grid-column-start: 1;
+                grid-column-end: 11;
+                grid-row-start: 14;
+                grid-row-end: 20;
+            }
+            #london__gallery-4 {
+                grid-column-start: 2;
+                grid-column-end: 10;
+                grid-row-start: 21;
+                grid-row-end: 30;
+            }
+            #london__gallery-5 {
+                grid-column-start: 2;
+                grid-column-end: 10;
+                grid-row-start: 31;
+                grid-row-end: 35;
+            }
+            #london__gallery-6 {
+                grid-column-start: 2;
+                grid-column-end: 10;
+                grid-row-start: 36;
+                grid-row-end: 41;
+            }
+        }
+    }
+    .tokyo__gallery {
+        .tokyo__gallery__img {
+            grid-template-rows: repeat(102, 10vh);
+            #tokyo__gallery-1 {
+                cursor: pointer;
+                grid-column-start: 2;
+                grid-column-end: 20;
+                grid-row-start: 1;
+                grid-row-end: 15;
+            }
+            #tokyo__gallery-2 {
+                cursor: pointer;
+                grid-column-start: 2;
+                grid-column-end: 20;
+                grid-row-start: 16;
+                grid-row-end: 26;
+            }
+            #tokyo__gallery-3 {
+                cursor: pointer;
+                grid-column-start: 2;
+                grid-column-end: 20;
+                grid-row-start: 27;
+                grid-row-end: 48;
+            }
+            #tokyo__gallery-4 {
+                cursor: pointer;
+                grid-column-start: 2;
+                grid-column-end: 20;
+                grid-row-start: 49;
+                grid-row-end: 59;
+            }
+            #tokyo__gallery-5 {
+                cursor: pointer;
+                grid-column-start: 2;
+                grid-column-end: 20;
+                grid-row-start: 60;
+                grid-row-end: 81;
+            }
+            #tokyo__gallery-6 {
+                cursor: pointer;
+                grid-column-start: 2;
+                grid-column-end: 20;
+                grid-row-start: 82;
+                grid-row-end: 92;
+            }
+            #tokyo__gallery-7 {
+                cursor: pointer;
+                grid-column-start: 2;
+                grid-column-end: 20;
+                grid-row-start: 93;
+                grid-row-end: 103;
+            }
+        }
+    }
+    .tokyo__gallery__modal {
+        .row {
+            > div {
+                .tokyo__gallery__modal__content {
+                    h1 {
+                        font-size: $fs-2 + 0.6;
+                    }
+                    p {
+                        font-size: $fs-0;
+                    }
+                }
+            }
+        }
+    }
+    .newyork__gallery {
+        .newyork__gallery__img {
+            grid-template-rows: repeat(553, 2vh);
+            #newyork__gallery-1 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 1;
+                grid-row-end: 4;
+                padding-top: 0;
+                // border-top: 1px solid rgba(0, 0, 0, 0.1);
+                border: none;
+            }
+            #newyork__gallery-2 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 5;
+                grid-row-end: 55;
+            }
+            #newyork__gallery-3 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 56;
+                grid-row-end: 130;
+            }
+            #newyork__gallery-4 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 131;
+                grid-row-end: 200;
+            }
+            #newyork__gallery-5 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 201;
+                grid-row-end: 300;
+            }
+            #newyork__gallery-6 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 301;
+                grid-row-end: 351;
+            }
+            #newyork__gallery-7 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 352;
+                grid-row-end: 402;
+            }
+            #newyork__gallery-8 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 403;
+                grid-row-end: 503;
+            }
+            #newyork__gallery-9 {
+                grid-column-start: 1;
+                grid-column-end: 51;
+                grid-row-start: 504;
+                grid-row-end: 554;
+            }
+        }
+    }
+    .newyork__label {
+        padding: $pd-7 $pd-5;
+        .newyork__label__content {
+            .row {
+                > div {
+                    h5 {
+                        font-size: $fs-0 - 0.2;
+                    }
+                    h1 {
+                        font-size: $fs-2 + 0.6;
+                        font-weight: 600;
+                    }
+                    p {
+                        font-size: $fs-1 - 0.3;
+                        padding-left: 0;
+                    }
+                    .newyork__label__button {
+                        padding-left: 0;
+
+                        &::after {
+                            left: 0;
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+        .newyork__label__gallery{
+            margin-top: $mg-7 * 2;
+            padding: 0;
+        }
+    }
+    .sydney__atmos{
+        .sydney__atmos__content{
+            h1{
+                font-size: $fs-3;
+            }
+        }
+    }
+}

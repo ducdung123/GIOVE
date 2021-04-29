@@ -1,0 +1,29 @@
+@for $i from 1 through 4{
+    .main--page__#{$i}{
+        background: url('../img/sliding-panels-img-#{$i}.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        overflow: hidden;
+        @media screen and  (max-width: 768px){
+            height: 25vh;
+        }
+    }
+}
+@for $i from 1 through 3{
+    #newyork__label__gallery--#{$i}{
+        background: url('../img/stack-cards-img-#{$i}.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 75vh;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 0 auto;
+        // @media screen and  (max-width: 768px){
+        //     height: 25vh;
+        // }
+    }
+}
